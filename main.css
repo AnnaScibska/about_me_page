@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'hauntedEyes';
+	src: url('vendor/fonts/hauntedEyes.otf'),
+	url('vendor/fonts/hauntedEyes.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CODEBold';
+	src: url('vendor/fonts/CODEBold.otf'); /*make ttf?*/
+}
+
+body, html {
+    height: 100%;
+    margin: 0; /*czy to potrzebne?*/
+	background-color: black;
+}
+
+nav {
+	font-family: 'CODEBold', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing:2px;
+	padding-top:20px;
+}
+
+nav a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none; /*BS override, why?*/
+	color: white; /*BS override, why?*/
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+header {
+	text-align: center;
+	font-family: 'hauntedEyes', Arial, serif;
+	padding: 330px 0;
+	background: url("img/intro.jpeg") no-repeat center;
+	height: 100%;
+	background-size: cover;
+}
+
+header h1 {
+	font-size: 100px;
+}
+
+.pwrap {
+	text-align: center;
+	font-family: 'Rock Salt', Arial, 'sans-serif';
+	padding-top: 20em; /*or other unit?*/
+	min-height: 100vh; /*or height-min?*/
+}
+
+.temporary {
+	font-size: 4em;
+	color: white;
+}
+	
+#badges, #contact {
+	background-color: #5b5b5b;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+
