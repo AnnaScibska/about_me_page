@@ -20,5 +20,14 @@ $(document).ready(function(){
     }
   });
   
+  $('a').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+  
+  if ($("p.thxMessage").length) {
+	$("form").css("display", "none");
+  }
+  
 });
+
 

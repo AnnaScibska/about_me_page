@@ -4,11 +4,6 @@
 	url('vendor/fonts/hauntedEyes.ttf') format('truetype');
 }
 
-@font-face {
-	font-family: 'CODEBold';
-	src: url('vendor/fonts/CODEBold.otf'); /*make ttf?*/
-}
-
 body, html {
     height: 100%;
 	background-color: black;
@@ -20,18 +15,18 @@ body, html {
 }
 
 .icon-color-change {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* modified Bootstrap */
 }
 
 nav {
-	font-family: 'CODEBold', Helvetica, Arial, sans-serif;
+	font-family: 'Carrois Gothic SC', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing:2px;
 }
 
-	@media all and (max-device-width: 480px), (max-width: 768px) {
+	@media all and (max-device-width: 480px), (max-width: 767px) {
 		#colorChange {
-			background-color: rgba(91, 91, 91, 0.9); /* adjust */
+			background-color: rgba(91, 91, 91, 0.9);
 		}
 	}
 
@@ -76,19 +71,20 @@ header h1 {
 .pwrap {
 	text-align: center;
 	font-family: 'Rock Salt', Arial, 'sans-serif';
-	padding-top: 20em;
+	padding-top: 10em;
 	min-height: 100vh;
 }
 
 	@media all and (max-device-width: 480px) {
 		.pwrap {
-			padding-top: 16em; /* adjust */
+			padding-top: 8em;
 		}
 	}
 
 .temporary {
 	font-size: 4em;
 	color: white;
+	padding-bottom: 1em;
 }
 
 	@media all and (max-device-width: 480px) {
@@ -97,15 +93,88 @@ header h1 {
 		}
 	}
 
-	
 #badges, #contact {
 	background-color: #5b5b5b;
+}
+
+label {
+	padding: 10px 0;
+	font-family: 'Carrois Gothic SC', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+}
+
+input, textarea {
+	border-radius: 5px;
+	padding: 2px;
+	background-color: #efefef;
+	font-family: 'Kavivanar', Arial, sans-serif;
+}
+
+button {
+	font-family: 'Carrois Gothic SC', Arial;
+}
+
+.submitBtn {
+  background: #8f8f8f;
+  background-image: -webkit-linear-gradient(top, #8f8f8f, #333333);
+  background-image: -moz-linear-gradient(top, #8f8f8f, #333333);
+  background-image: -ms-linear-gradient(top, #8f8f8f, #333333);
+  background-image: -o-linear-gradient(top, #8f8f8f, #333333);
+  background-image: linear-gradient(to bottom, #8f8f8f, #333333);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #757575 2px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.submitBtn:hover {
+  background: #d4d4d4;
+  background-image: -webkit-linear-gradient(top, #d4d4d4, #5c5c5c);
+  background-image: -moz-linear-gradient(top, #d4d4d4, #5c5c5c);
+  background-image: -ms-linear-gradient(top, #d4d4d4, #5c5c5c);
+  background-image: -o-linear-gradient(top, #d4d4d4, #5c5c5c);
+  background-image: linear-gradient(to bottom, #d4d4d4, #5c5c5c);
+  text-decoration: none;
+  color: #333333;
+}
+
+/* button css: http://css3buttongenerator.com/ */
+
+.thxMessage {
+	margin-top: 15px;
+	font-family: 'Rock Salt', Arial, 'sans-serif';
+	font-size: 4em;
+	color: white;
+}
+
+	@media all and (max-device-width: 480px) {
+		.thxMessage {
+			font-size: 2em;
+		}
+		
+	}
+		
+.changeAfterSubmit {
+	display: none;
 }
 
 footer {
 	background-color: black;
 	color: white;
 	text-align: center;
+	margin: 10px;
 }
 
-
+footer p {
+	padding-top: 10px;
+}
