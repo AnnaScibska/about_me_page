@@ -6,16 +6,7 @@
 
 body, html {
     height: 100%;
-	background-color: black;
-}
-
-.navbar-toggler-color-change {
-    color: white !important;
-    border-color: white !important;
-}
-
-.icon-color-change {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* modified Bootstrap */
+	background-color: #000;
 }
 
 nav {
@@ -27,12 +18,18 @@ nav {
 	@media all and (max-device-width: 480px), (max-width: 767px) {
 		#colorChange {
 			background-color: rgba(91, 91, 91, 0.9);
+			border-bottom: 1px solid #000;
 		}
 	}
 
 nav a {
-	color: white;
+	color: #fff;
 	font-size: 1.2em;
+}
+
+	nav a:hover {
+	text-decoration: none;
+	color: #fff;
 }
 
 nav li {					
@@ -44,9 +41,13 @@ nav li {
 	color: rgba(255, 255, 255, 1) !important;
 }
 
-a:hover {
-	text-decoration: none;
-	color: white; /* maybe light gray? */
+.navbar-toggler-color-change {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.icon-color-change {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* modified Bootstrap */
 }
 
 header {
@@ -68,34 +69,89 @@ header h1 {
 	font-size: 100px;
 }
 
-.pwrap {
+section {
 	text-align: center;
-	font-family: 'Rock Salt', Arial, 'sans-serif';
+	font-family: 'Montserrat', Arial, 'sans-serif';
 	padding-top: 10em;
 	min-height: 100vh;
+	padding-bottom: 2em;
 }
 
 	@media all and (max-device-width: 480px) {
-		.pwrap {
+		section {
 			padding-top: 8em;
 		}
 	}
 
-.temporary {
+h2 { /*czemu na telefonie nie działa h2 bez klasy?!*/
+	font-family: 'Rock Salt', Arial, 'sans-serif';
 	font-size: 4em;
-	color: white;
-	padding-bottom: 1em;
+	color: #fff;
+	padding-bottom: 1em; /* to chyba do poprawki */
 }
 
 	@media all and (max-device-width: 480px) {
-		.temporary {
+		h2 {
 			font-size: 2em;
 		}
 	}
+	
+h3 {
+	margin: 2em 0;
+}
 
 #badges, #contact {
 	background-color: #5b5b5b;
 }
+
+#badges p { /* to jakoś zmienić, i wogóle opanować margin i padding */
+	margin-top: 20px;
+}
+
+#badges a {
+	color: #212529;
+	text-decoration: none;
+}
+
+.language {
+	padding: 20px; 
+}
+
+	.language:hover {
+		background-color: #8c8c8c;
+	}
+
+.checked {
+    color: orange;
+}
+
+div.language>p {
+	margin-bottom: 0;
+}
+
+/* override Bootstrap */
+
+.ekko-lightbox-nav-overlay a{
+	color:#000;
+}
+
+.modal-content {
+	background-color: #000;
+}
+
+.ekko-lightbox-nav-overlay a {
+	font-size: 90px;
+}
+
+.onlineProfiles a {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+	.onlineProfiles a:hover {
+		background-color: #fff;
+	}
 
 label {
 	padding: 10px 0;
@@ -114,47 +170,27 @@ button {
 	font-family: 'Carrois Gothic SC', Arial;
 }
 
-.submitBtn {
-  background: #8f8f8f;
-  background-image: -webkit-linear-gradient(top, #8f8f8f, #333333);
-  background-image: -moz-linear-gradient(top, #8f8f8f, #333333);
-  background-image: -ms-linear-gradient(top, #8f8f8f, #333333);
-  background-image: -o-linear-gradient(top, #8f8f8f, #333333);
-  background-image: linear-gradient(to bottom, #8f8f8f, #333333);
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  text-shadow: 2px 2px 4px #666666;
-  -webkit-box-shadow: 2px 2px 3px #666666;
-  -moz-box-shadow: 2px 2px 3px #666666;
-  box-shadow: 2px 2px 3px #666666;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid #757575 2px;
-  text-decoration: none;
-  margin-bottom: 10px;
+#submitBtn {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	font-family: 'Carrois Gothic SC', Arial;
+	color: #fff;
+	background-color: #5b5b5b;
+	padding: 5px 15px;
+	margin-bottom: 10px;
 }
 
-.submitBtn:hover {
-  background: #d4d4d4;
-  background-image: -webkit-linear-gradient(top, #d4d4d4, #5c5c5c);
-  background-image: -moz-linear-gradient(top, #d4d4d4, #5c5c5c);
-  background-image: -ms-linear-gradient(top, #d4d4d4, #5c5c5c);
-  background-image: -o-linear-gradient(top, #d4d4d4, #5c5c5c);
-  background-image: linear-gradient(to bottom, #d4d4d4, #5c5c5c);
-  text-decoration: none;
-  color: #333333;
-}
-
-/* button css: http://css3buttongenerator.com/ */
+	#submitBtn:hover {
+		color: #5b5b5b;
+		background-color: #efefef;
+		font-weight: bold;
+	}
 
 .thxMessage {
 	margin-top: 15px;
 	font-family: 'Rock Salt', Arial, 'sans-serif';
 	font-size: 4em;
-	color: white;
+	color: #fff;
 }
 
 	@media all and (max-device-width: 480px) {
@@ -169,8 +205,8 @@ button {
 }
 
 footer {
-	background-color: black;
-	color: white;
+	background-color: #000;
+	color: #fff;
 	text-align: center;
 	margin: 10px;
 }
