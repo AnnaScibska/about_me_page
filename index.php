@@ -18,7 +18,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">	
 		<link href="https://fonts.googleapis.com/css?family=Kavivanar&amp;subset=latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
 	  
 	</head>
 	
@@ -60,7 +60,7 @@
 		<section id="badges">
 			<div class="container">
 				<h2>learning badges and certificates</h2>
-				<h3>languages, frameworks & tools I got to know. my level of knowledge of the basis is represented by the number of stars.</h3>
+				<h3>languages, frameworks & tools I got to know</h3> <h3>my level of knowledge of the basis is represented by the number of stars</h3>
 				<p>clik to see badges and certificates.</p>
 				<div class="row">
 					<div class="d-flex flex-column align-items-center col-md-6">
@@ -125,7 +125,7 @@
 						<a href="img/badges/jQuerySL.jpg" data-toggle="lightbox" data-gallery="jQuery"></a>
 						<a href="img/badges/phpCC.png" data-toggle="lightbox" data-gallery="php">
 							<div class="language">
-								<p>PHP</p>
+								<p>php</p>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
 								<span class="fa fa-star checked"></span>
@@ -182,7 +182,42 @@
 		</section>
 	  
 		<section id="code">
-			<h2>/ code / <br/> work still in progress</h2>
+			<div class="container">
+				<h2>code sample</h2>
+					<div class="codeExample">
+						<h3>first project</h3>
+						<p>My first programming project where I was trying to use things I've been learning. It's been on hold for the moment as I have a lot of other things to do, but it's not dead yet. Looking at it from the current perspective I am not that proud of it as I once was... Plenty of room for improvement. Code available on my <a href="https://github.com/freeanke/double_pronoun/tree/master/double_pronom_project">Github account</a>.</p>
+						<a href="http://www.anulla.eu/project/index.html">
+							<img src="img/project.png" alt="" class="img-fluid"/>
+						</a>
+					</div>
+					<div class="codeExample">
+						<h3>homework</H3>
+						<p>Some work I've done while doing online courses:</p>
+						<ul>
+							<li>fictional responsive CV</li>
+							<a href="http://anulla.eu/fictionalCV/index.html">
+								<img src="img/CV.png" alt="" class="img-fluid"/>
+							</a>
+							<li>adding a link on a page using JavaScript</li>
+							<a href="http://anulla.eu/addLink/index.html">
+								<img src="img/addLink.png" alt=""class="img-fluid"/>
+							</a>
+						</ul>
+					</div>
+					<div class="codeExample">
+						<h3>programming challange</h3>
+						<p>A reddit programming challenge (I didn't published it because it didn't meet all the criteria, as it turned out). The idea was to create a calculator using only addition as a mathematical operation.</p>
+						<iframe height="400px" width="100%" src="https://repl.it/@freeanke/calculator-built-only-using-addition?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" width="100%" ></iframe>
+					</div>
+					<div class="codeExample">
+						<h3>website</h3>	
+						<p>My most recent work is this page itself. You can see the progress on my <a href="https://github.com/freeanke/about_me_page">Github account</a>.</p>
+						<a href="#page-top">
+							<img src="img/aboutMe.png" alt="" class="img-fluid"/>
+						</a>
+					</div>
+			</div>
 		</section>
 	  
 		<section id="contact">

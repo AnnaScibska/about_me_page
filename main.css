@@ -9,6 +9,8 @@ body, html {
 	background-color: #000;
 }
 
+/* navbar */
+
 nav {
 	font-family: 'Carrois Gothic SC', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -50,6 +52,8 @@ nav li {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* modified Bootstrap */
 }
 
+/* header */
+
 header {
 	text-align: center;
 	font-family: 'hauntedEyes', Arial, serif;
@@ -67,7 +71,10 @@ header {
 
 header h1 {
 	font-size: 100px;
+
 }
+
+/* sections */
 
 section {
 	text-align: center;
@@ -83,11 +90,11 @@ section {
 		}
 	}
 
-h2 { /*czemu na telefonie nie działa h2 bez klasy?!*/
+h2 {
 	font-family: 'Rock Salt', Arial, 'sans-serif';
 	font-size: 4em;
 	color: #fff;
-	padding-bottom: 1em; /* to chyba do poprawki */
+	padding-bottom: 1em;
 }
 
 	@media all and (max-device-width: 480px) {
@@ -104,7 +111,11 @@ h3 {
 	background-color: #5b5b5b;
 }
 
-#badges p { /* to jakoś zmienić, i wogóle opanować margin i padding */
+/* about me */
+
+/* badges */
+
+#badges p {
 	margin-top: 20px;
 }
 
@@ -122,14 +133,14 @@ h3 {
 	}
 
 .checked {
-    color: orange;
+    color: #ffa500;
 }
 
 div.language>p {
 	margin-bottom: 0;
 }
 
-/* override Bootstrap */
+	/* override Bootstrap */
 
 .ekko-lightbox-nav-overlay a{
 	color:#000;
@@ -152,6 +163,56 @@ div.language>p {
 	.onlineProfiles a:hover {
 		background-color: #fff;
 	}
+	
+/* code */
+
+#code p, #code li {
+	color: #000;
+	font-size: 1.5em;
+}
+
+#code h3 {
+	font-weight: 800;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-transform: uppercase;
+}
+
+.codeExample {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#code ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#code li {
+	text-decoration: underline;
+	margin-top: 1.5em;
+}
+
+#code img, #code iframe {
+	margin-top: 1.5em;
+}
+
+#code a {
+	color: #000;
+	text-decoration: none;
+}
+
+	#code a:hover {
+		color: #fff;
+	}
+
+/* contact form */
+
+#form .container {
+	border: 1px solid #fff;
+}
 
 label {
 	padding: 10px 0;
@@ -203,6 +264,8 @@ button {
 .changeAfterSubmit {
 	display: none;
 }
+
+/* footer */
 
 footer {
 	background-color: #000;
