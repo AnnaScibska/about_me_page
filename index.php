@@ -260,15 +260,7 @@
 				<button type="submit" name="submit" form="contactForm" value="Submit" id="submitBtn">SEND <i class="fa fa-envelope-o"></i></button>
 		  
 				<?php
-					$servername = "********";
-					$username = "********"; 
-					$password = "********"; 
-					$dbname = "********";
-				
-					$conn = new mysqli($servername, $username, $password, $dbname);
-					if ($conn->connect_error) {
-						die("Connection failed: " . $conn->connect_error);
-					}
+					require_once 'config.php';
 				
 					if (isset($_POST['submit'])) {
 						$contactname = $_POST['contactname'];
