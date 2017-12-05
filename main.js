@@ -1,4 +1,10 @@
-$(document).ready(function(){   
+$(document).ready(function(){
+		
+	var scroll = $(this).scrollTop();
+	if (scroll > 40) {
+		$('#colorChange').css('background-color', 'rgba(91, 91, 91, 0.9)');
+		$('#colorChange').css('border-bottom', '1px solid #000');
+	}
 
 	$(document).scroll(function() { 
 		var scroll_start = $(this).scrollTop();

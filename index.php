@@ -18,7 +18,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">	
 		<link href="https://fonts.googleapis.com/css?family=Kavivanar&amp;subset=latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
 	  
 	</head>
 	
@@ -54,8 +54,16 @@
 		</header>
 	  
 		<section id="about">
-			<h2>/ about / <br/> work still in progress</h2>
+			<h2>about me</h2>
+			<div class="container col-lg-8 col-sm-12">
+				<p>My name is Anna. I am learning programming to become a web developer. This is my first "about me" page.</p>
+				<p>Coding is my new discovery. I find it cool, fun and satisfing (when it works). Hopefully one day it is going to be my profession.</p>
+				<p>And here's my "battle station":</p>
+			</div>
+			<img src="img/workingStation.jpeg" alt="My working place" class="img-fluid">
 		</section>
+		
+		<div class="gradient1"></div>
 	  
 		<section id="badges">
 			<div class="container">
@@ -98,7 +106,7 @@
 								<span class="fa fa-star"></span>
 							</div>
 						</a>
-						<a href="img/badges/javascriptOC.png" data-toggle="lightbox" data-gallery="javascript">
+						<a href="img/badges/javascriptOC1.png" data-toggle="lightbox" data-gallery="javascript">
 							<div class="language">
 								<p>JavaScript</p>
 								<span class="fa fa-star checked"></span>
@@ -109,6 +117,7 @@
 							</div>
 						</a>
 						<a href="img/badges/javascriptCC.png" data-toggle="lightbox" data-gallery="javascript"></a>
+						<a href="img/badges/javascriptOC2.png" data-toggle="lightbox" data-gallery="javascript">
 						<a href="img/badges/javascriptSL.jpg" data-toggle="lightbox" data-gallery="javascript"></a>
 					</div>
 					<div class="d-flex flex-column align-items-center col-md-6">
@@ -180,7 +189,9 @@
 				</div>	
 			</div>
 		</section>
-	  
+		
+		<div class="gradient2"></div>
+		
 		<section id="code">
 			<div class="container">
 				<h2>code sample</h2>
@@ -188,48 +199,57 @@
 						<h3>first project</h3>
 						<p>My first programming project where I was trying to use things I've been learning. It's been on hold for the moment as I have a lot of other things to do, but it's not dead yet. Looking at it from the current perspective I am not that proud of it as I once was... Plenty of room for improvement. Code available on my <a href="https://github.com/freeanke/double_pronoun/tree/master/double_pronom_project">Github account</a>.</p>
 						<a href="http://www.anulla.eu/project/index.html">
-							<img src="img/project.png" alt="" class="img-fluid"/>
+							<img src="img/project.png" alt="My project print screen" class="img-fluid"/>
 						</a>
 					</div>
 					<div class="codeExample">
 						<h3>homework</H3>
 						<p>Some work I've done while doing online courses:</p>
 						<ul>
-							<li>fictional responsive CV</li>
-							<a href="http://anulla.eu/fictionalCV/index.html">
-								<img src="img/CV.png" alt="" class="img-fluid"/>
-							</a>
-							<li>adding a link on a page using JavaScript</li>
-							<a href="http://anulla.eu/addLink/index.html">
-								<img src="img/addLink.png" alt=""class="img-fluid"/>
-							</a>
+							<li>fictional responsive CV
+								<a href="http://anulla.eu/fictionalCV/index.html">
+									<img src="img/CV.png" alt="Responsive CV print screen" class="img-fluid"/>
+								</a>
+							</li>
+							<li>adding a link on a page using JavaScript
+								<a href="http://anulla.eu/addLink/index.html">
+									<img src="img/addLink.png" alt="Adding link print screen" class="img-fluid"/>
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div class="codeExample">
 						<h3>programming challange</h3>
 						<p>A reddit programming challenge (I didn't published it because it didn't meet all the criteria, as it turned out). The idea was to create a calculator using only addition as a mathematical operation.</p>
 						<iframe height="400px" width="100%" src="https://repl.it/@freeanke/calculator-built-only-using-addition?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" width="100%" ></iframe>
+						<!-- sprawdzić: allowfullscreen i inne z validatora -->
 					</div>
 					<div class="codeExample">
 						<h3>website</h3>	
 						<p>My most recent work is this page itself. You can see the progress on my <a href="https://github.com/freeanke/about_me_page">Github account</a>.</p>
 						<a href="#page-top">
-							<img src="img/aboutMe.png" alt="" class="img-fluid"/>
+							<img src="img/aboutMe.png" alt="This page print screen" class="img-fluid"/>
 						</a>
 					</div>
 			</div>
 		</section>
-	  
+		
+		<div class="gradient1"></div>
+		
 		<section id="contact">
 			<div class="container">
 				<h2>Contact me!</h2>
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]."#contact");?>" id="contactForm"> 
 					<div class="row">
-						<div class="form-group d-flex flex-column col-md-4">
-							<label for="contactname">Name :</label>
-							<input type="text" name="contactname" id="contactname" placeholder="Google" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Google'" required>
-							<label for="contactemail">Email :</label>
-							<input type="email" name="contactemail" id="contactemail" placeholder="google@google.com" onfocus="this.placeholder=''" onblur="this.placeholder='google@google.com'" required>
+						<div class="form-group d-flex flex-column col-md-4 justify-content-between">
+							<div class="d-flex flex-column">
+								<label for="contactname">Name :</label>
+								<input type="text" name="contactname" id="contactname" placeholder="Google" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Google'" required>
+							</div>
+								<div class="d-flex flex-column">
+								<label for="contactemail">Email :</label>
+								<input type="email" name="contactemail" id="contactemail" placeholder="google@google.com" onfocus="this.placeholder=''" onblur="this.placeholder='google@google.com'" required>
+							</div>
 						</div>
 						<div class="form-group d-flex flex-column col-md-8">
 							<label for="message">Message :</label>
@@ -237,7 +257,7 @@
 						</div>
 					</div>
 				</form>
-				<button type="submit" name="submit" form="contactForm" value="Submit" id="submitBtn">SEND <i class="fa fa-envelope-o"></i></button> 
+				<button type="submit" name="submit" form="contactForm" value="Submit" id="submitBtn">SEND <i class="fa fa-envelope-o"></i></button>
 		  
 				<?php
 					$servername = "********";
@@ -267,7 +287,9 @@
 			
 			</div>
 		</section>
-	  
+		
+		<div class="gradient2"></div>
+		
 		<footer>
 			<p>Copyright &copy; Anula 2017</p>
 		</footer>

@@ -111,7 +111,32 @@ h3 {
 	background-color: #5b5b5b;
 }
 
+.gradient1 {
+	height: 7px;
+    background: #000;
+    background: -webkit-linear-gradient(#000, #5b5b5b);
+    background: -o-linear-gradient(#000, #5b5b5b);
+    background: -moz-linear-gradient(#000, #5b5b5b);
+    background: linear-gradient(#000, #5b5b5b);
+}
+
+.gradient2 {
+	height: 7px;
+    background: #5b5b5b;
+    background: -webkit-linear-gradient(#5b5b5b, #000);
+    background: -o-linear-gradient(#5b5b5b, #000);
+    background: -moz-linear-gradient(#5b5b5b, #000);
+    background: linear-gradient(#5b5b5b, #000);
+}
+
 /* about me */
+
+#about p {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 1.4em;
+	font-weight: 300;
+}
 
 /* badges */
 
@@ -140,7 +165,17 @@ div.language>p {
 	margin-bottom: 0;
 }
 
-	/* override Bootstrap */
+@media all and (min-width: 1400px) {
+	div.language>p {
+		font-size: 2em;
+	}	
+}
+
+@media all and (min-width: 1400px) {
+	#badges .fa {
+		font-size: 2em;
+	}	
+}
 
 .ekko-lightbox-nav-overlay a{
 	color:#000;
@@ -210,10 +245,6 @@ div.language>p {
 
 /* contact form */
 
-#form .container {
-	border: 1px solid #fff;
-}
-
 label {
 	padding: 10px 0;
 	font-family: 'Carrois Gothic SC', Helvetica, Arial, sans-serif;
@@ -222,9 +253,18 @@ label {
 
 input, textarea {
 	border-radius: 5px;
-	padding: 2px;
-	background-color: #efefef;
+	padding: 4px 6px;
+	background-color: #5b5b5b;
 	font-family: 'Kavivanar', Arial, sans-serif;
+	color: #fff;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 1px;
+}
+
+::placeholder {
+  color: #999;	
+  opacity: 1;
 }
 
 button {
