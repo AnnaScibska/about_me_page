@@ -55,10 +55,11 @@
 	  
 		<section id="about">
 			<h2>about me</h2>
-			<div class="container col-lg-8 col-sm-12">
-				<p>My name is Anna. I am learning programming to become a web developer. This is my first "about me" page.</p>
-				<p>Coding is my new discovery. I find it cool, fun and satisfing (when it works). Hopefully one day it is going to be my profession.</p>
-				<p>And here's my "battle station":</p>
+			<div class="container">
+				<p>My name is Anna. I am learning programming (on my own for the moment) to become a web developer.  I love to discover new things. Visiting different corners of the world, tasting unknown flavours of regional cuisines and playing boardgames.</p>
+				<p>At the picture above I am at the end of the world!</p>
+				<p>Coding is my recent discovery. I find it cool, entertaining and satisfying (when it works). I put lots of effort and work hard to make sure that one day it will become my profession.</p>
+				<p>And here's my ‘battlestation’:</p>
 			</div>
 			<img src="img/workingStation.jpeg" alt="My working place" class="img-fluid">
 		</section>
@@ -67,8 +68,9 @@
 	  
 		<section id="badges">
 			<div class="container">
-				<h2>learning badges and certificates</h2>
-				<h3>languages, frameworks & tools I got to know</h3> <h3>my level of knowledge of the basis is represented by the number of stars</h3>
+				<h2>badges and certificates</h2>
+				<h3>languages, frameworks & tools</h3> 
+				<h3>knowledge level  about the basics is represented by the number of stars</h3>
 				<p>clik to see badges and certificates.</p>
 				<div class="row">
 					<div class="d-flex flex-column align-items-center col-md-6">
@@ -197,7 +199,7 @@
 				<h2>code sample</h2>
 					<div class="codeExample">
 						<h3>first project</h3>
-						<p>My first programming project where I was trying to use things I've been learning. It's been on hold for the moment as I have a lot of other things to do, but it's not dead yet. Looking at it from the current perspective I am not that proud of it as I once was... Plenty of room for improvement. Code available on my <a href="https://github.com/freeanke/double_pronoun/tree/master/double_pronom_project">Github account</a>.</p>
+						<p>My first programming project (a language e-learning app) where I tried to apply the knowledge acquired through the learning stages. It is on the hold for the time being, as I have a lot of other things to do, but it's not ‘dead’ yet. Looking at it from the current perspective I am not as proud of it as I once was... There is room for improvement. The next step will be to refactor CSS and to add a user profile. Code available on my <a href="https://github.com/freeanke/double_pronoun/tree/master/double_pronom_project">Github account</a>.</p>
 						<a href="http://www.anulla.eu/project/index.html">
 							<img src="img/project.png" alt="My project print screen" class="img-fluid"/>
 						</a>
@@ -220,13 +222,13 @@
 					</div>
 					<div class="codeExample">
 						<h3>programming challange</h3>
-						<p>A reddit programming challenge (I didn't published it because it didn't meet all the criteria, as it turned out). The idea was to create a calculator using only addition as a mathematical operation.</p>
+						<p>A reddit programming challenge. The idea was to create a calculator using only addition as an operation.</p>
 						<iframe height="400px" width="100%" src="https://repl.it/@freeanke/calculator-built-only-using-addition?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" width="100%" ></iframe>
 						<!-- sprawdzić: allowfullscreen i inne z validatora -->
 					</div>
 					<div class="codeExample">
 						<h3>website</h3>	
-						<p>My most recent work is this page itself. You can see the progress on my <a href="https://github.com/freeanke/about_me_page">Github account</a>.</p>
+						<p>My most recent work is this page itself. I was using Bootstrap, jQuery and PHP in addition to HTML & CSS, so it's responsive and connected to SQL database. You can see the progress on my <a href="https://github.com/freeanke/about_me_page">Github account</a>.</p>
 						<a href="#page-top">
 							<img src="img/aboutMe.png" alt="This page print screen" class="img-fluid"/>
 						</a>
